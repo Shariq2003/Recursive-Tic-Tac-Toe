@@ -84,18 +84,20 @@ function checkGameOver() {
 
     //We know, NO Winner Found, let's check whether there is tie
     return false;
-    let fillCount = 0;
-    gameGrid.forEach((box) => {
-        if(box !== "" )
-            fillCount++;
-    });
+
+    //For the Normal Tic-Tac-Toe
+    // let fillCount = 0;
+    // gameGrid.forEach((box) => {
+    //     if(box !== "" )
+    //         fillCount++;
+    // });
 
     //board is Filled, game is TIE
-    if(fillCount === 9) {
-        // return false;
-        gameInfo.innerText = "Game Tied !";
-        newGameBtn.classList.add("active");
-    }
+    // if(fillCount === 9) {
+    //     // return false;
+    //     gameInfo.innerText = "Game Tied !";
+    //     newGameBtn.classList.add("active");
+    // }
 }
 
 function handleClick(index) {
